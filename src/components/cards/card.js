@@ -40,7 +40,7 @@ class Card extends React.Component {
                 <div className="card__text">
                 <h3>{cardItem.fullname}</h3>
                 <p>{cardItem.infotext}</p>
-                <p>ID: {this.props.profiles[index].id}</p>
+                <p><strong>ID: {this.props.profiles[index].id}</strong></p>
                 <button className='btn btn--red' onClick={(e) => this.props.removeCardBtn(e, (index))}>remove</button>
                 <Button btnClass={'btn--default'} btnText={'View Profile'} />
                 </div>
