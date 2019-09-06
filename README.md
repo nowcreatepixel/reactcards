@@ -1,6 +1,4 @@
-Install packages
-npm install
+Install packages with 'npm install'
 
-Run
-npm run start
+Run it with 'npm run start'
 
