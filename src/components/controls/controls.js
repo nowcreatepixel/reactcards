@@ -18,8 +18,7 @@ class Controls extends React.Component {
   
            <div className="controls">
                <Button btnClass={'btn--default'} btnText={'Add New'} />
-               <Button btnClass={'btn--red'} btnText={'Remove All'} />
-               <button onClick={(e) => this.props.removeAllBtn(e)}>remove all</button>
+               <button className='btn btn--red' onClick={(e) => this.props.removeAllBtn(e)}>remove all</button>
            </div>
 
        

@@ -16,11 +16,11 @@ class Card extends React.Component {
 
     // LIFECYCLE METHODS
     componentDidMount() {
-      
+      console.log('component did mount');
     }
 
     componentWillUnmount() {
-       
+     console.log('component will unmount');
     }
 
 
@@ -41,7 +41,7 @@ class Card extends React.Component {
                 <h3>{cardItem.fullname}</h3>
                 <p>{cardItem.infotext}</p>
                 <p>ID: {this.props.profiles[index].id}</p>
-                <button onClick={(e) => this.props.removeCardBtn(e, (index))}>remove</button>
+                <button className='btn btn--red' onClick={(e) => this.props.removeCardBtn(e, (index))}>remove</button>
                 <Button btnClass={'btn--default'} btnText={'View Profile'} />
                 </div>
                 </div>
