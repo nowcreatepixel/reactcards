@@ -1,0 +1,26 @@
+.btn {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0.8em;
+    margin:0.3em;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-transition: background-color .6s ease;
+    -moz-transition: background-color .6s ease;
+    -ms-transition: background-color .6s ease;
+    transition: background-color .6s ease; }
+.btn--default {
+    background-color: #203544;
+    color: #ffffff;
+    font-size: 0.7em; }
+.btn--default:hover {
+    background-color: #305067; }
+.btn--red {
+    background-color: #b91514;
+    color: #ffffff;
+    font-size: 0.7em; }
+.btn--red:hover {
+    background-color: #e61b1a; }

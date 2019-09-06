@@ -1,0 +1,24 @@
+[
+           {    "id": 2874,
+                "photo": "https://www.now-creative.com/images/profileimage.png",
+                "fullname": "Peter Graham",
+                "infotext": "Lorem ipsum dolor amet, consectetur adipiscing elit, sed do",
+                "active": true   
+           },
+           {
+                "id": 1777,
+                "photo": "https://www.now-creative.com/images/profileimage.png",
+               "fullname": "Susan Green",
+               "infotext": "Lorem ipsum dolor amet, consectetur adipiscing eipsum dolor ametlit, sed do",
+               "active": true  
+           },
+           {
+                "id": 1261,
+                "photo": "https://www.now-creative.com/images/profileimage.png",
+               "fullname": "Alan North",
+               "infotext": "Lorem ipsum dolor amet, consectetur adipiscing elit, sed do",
+               "active": false  
+           }
+]
+
+
