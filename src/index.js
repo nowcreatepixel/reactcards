@@ -4,12 +4,14 @@ import PropTypes from "prop-types";
 import './index.css';
 import Card from './components/cards/card';
 import Controls from './components/controls/controls';
+import Addnew from './components/addnew/addnew';
 
 
 
 // dummy data source //
 // ----------------------------------------- //
 import data from './data.json';
+import { brotliDecompressSync } from 'zlib';
 
 
 
@@ -66,6 +68,17 @@ class App extends React.Component {
         });
 
        }
+
+
+    // Method to add a new profile
+       addNew(e) {
+           e.preventDefault();
+           const addNewContainer = document.getElementById('add');
+           addNewContainer.style.setProperty('display', 'block');
+       }
+
+
+       
     
 
 
@@ -73,13 +86,24 @@ class App extends React.Component {
     // --------------------------------------------------------- //
 
     render() {
+
+        const profileAmount = this.state.profiles.length;
       
         return (
             <div>
+
+             <div className="titlearea"><h3>
+             {profileAmount !== 1 ? `there are ${profileAmount} members` : `there is ${profileAmount} member`}
+             </h3>
+             </div>
+
             <section className="grid">
             <Card removeCardBtn={this.removeCard} removeAllBtn={this.removeAll} profiles={this.state.profiles} />
             </section>     
-            <Controls removeAllBtn={this.removeAll}/>  
+            <Controls addNewProfileBtn={this.addNew} removeAllBtn={this.removeAll}/> 
+
+            <Addnew /> 
+
             </div>
         );
     }

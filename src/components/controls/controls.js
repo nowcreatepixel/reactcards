@@ -17,12 +17,10 @@ class Controls extends React.Component {
         return (
   
            <div className="controls">
-               <Button btnClass={'btn--default'} btnText={'Add New'} />
-               <button className='btn btn--red' onClick={(e) => this.props.removeAllBtn(e)}>remove all</button>
+               <Button btnClass={'btn--default'} onClick={this.props.addNewProfileBtn}>Add New</Button>
+               <Button btnClass={'btn--red'} onClick={(e) => this.props.removeAllBtn(e)}>Remove All</Button>
            </div>
-
-       
-            
+    
         )
     }
 }

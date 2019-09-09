@@ -23,16 +23,19 @@ class Card extends React.Component {
      console.log('component will unmount');
     }
 
+    viewProfile () {
+     alert('view profile');
+    }
+
 
     
     
 
     render() { 
 
-        return (
-  
+        return ( 
 
-            this.props.profiles.map( (cardItem, index) => {
+             this.props.profiles.map( (cardItem, index) => {
           
                 return <div key={cardItem.id} className="card card--sm">
                 <div className="card__content">
@@ -41,16 +44,14 @@ class Card extends React.Component {
                 <h3>{cardItem.fullname}</h3>
                 <p>{cardItem.infotext}</p>
                 <p><strong>ID: {this.props.profiles[index].id}</strong></p>
-                <button className='btn btn--red' onClick={(e) => this.props.removeCardBtn(e, (index))}>remove</button>
-                <Button btnClass={'btn--default'} btnText={'View Profile'} />
+                <Button onClick={(e) => this.props.removeCardBtn(e, (index))} btnClass={'btn--red'}>Remove</Button>
+                <Button onClick={this.viewProfile} btnClass={'btn--default'}>View Profile</Button>
                 </div>
                 </div>
                 </div>           
         
-            })
-
-
-     
+            }) 
+ 
         )
     }
 }
